@@ -8,8 +8,11 @@ fluentbit:
 auditlogServerHost: ""
 auditlogServerPort: ""
 clusterid: ""
-nodeSelector: 
+nodeSelector:
   node-role.kubernetes.io/controlplane: "true"
 webhook:
   servicePort: "8888"
   serviceNodePort: ""
+
+global:
+  systemDefaultRegistry: ""

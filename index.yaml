@@ -323,9 +323,9 @@ entries:
       catalog.cattle.io/upstream-version: 3.1.3
     apiVersion: v2
     appVersion: 3.1.3
-    created: "2023-03-08T18:00:32.260581+08:00"
+    created: "2023-03-23T10:49:54.066913+08:00"
     description: Provides gpu monitoring depending on Rancher Prime Monitoring.
-    digest: 77032425cbaadc8bdf6ff0e91402d944eeae53dbf2fc018efd9df83460cf2c6b
+    digest: dabc1af5ccce5f178a2f103afc248d67c1c468b85f885673daa88204a009a1bf
     home: https://github.com/nvidia/dcgm-exporter/
     icon: https://assets.nvidiagrid.net/ngc/logos/DCGM.png
     kubeVersion: '>= 1.20.0-0'
@@ -373,9 +373,9 @@ entries:
       catalog.cattle.io/rancher-version: '>= 2.7.0-0'
     apiVersion: v2
     appVersion: 2.0.9
-    created: "2023-03-17T13:35:00.199505+08:00"
+    created: "2023-03-23T10:49:54.136585+08:00"
     description: collect k8s auditlog for rancher auditlog server
-    digest: 63bfcaf8a4b859bb7b9ce89c50a7f529d368ec841be3ad44dcb6050516167675
+    digest: eb720ddd39c374e920486219c806e3dcc9b25780fbcc82c8c03ac2e6225ddaf6
     icon: https://raw.githubusercontent.com/fluent/fluentd-docs/master/public/logo/Fluentd_square.png
     kubeVersion: '>= 1.20.0-0'
     name: rancher-k8s-auditlog-collector
