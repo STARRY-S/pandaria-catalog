@@ -627,6 +627,29 @@ entries:
     urls:
     - assets/rancher-f5-cis-crd/rancher-f5-cis-crd-103.0.0+up0.0.29.tgz
     version: 103.0.0+up0.0.29
+  rancher-flat-network:
+  - annotations:
+      catalog.cattle.io/certified: rancher
+      catalog.cattle.io/display-name: Rancher FlatNetwork
+      catalog.cattle.io/kube-version: '>= 1.25.0-0'
+      catalog.cattle.io/namespace: cattle-flat-network
+      catalog.cattle.io/os: linux
+      catalog.cattle.io/permits-os: linux
+      catalog.cattle.io/rancher-version: '>= 2.8.0-alpha'
+      catalog.cattle.io/release-name: rancher-flat-network
+      catalog.cattle.io/type: cluster-tool
+    apiVersion: v2
+    appVersion: 0.1.0-beta.17
+    created: "2024-08-01T17:40:29.4992171+08:00"
+    description: Helm chart for managing rancher flat-network pods
+    digest: 3c1579aa65e0002d8265f647ea5c69860845dc164b9fd44e0470f17c442d209d
+    home: https://github.com/cnrancher/rancher-flat-network
+    name: rancher-flat-network
+    sources:
+    - https://github.com/cnrancher/rancher-flat-network
+    urls:
+    - assets/rancher-flat-network/rancher-flat-network-103.0.1+up0.1.0-beta.17.tgz
+    version: 103.0.1+up0.1.0-beta.17
   rancher-gpu-monitoring:
   - annotations:
       catalog.cattle.io/certified: rancher
