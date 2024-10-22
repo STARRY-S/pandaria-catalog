@@ -1,0 +1,28 @@
+name: Release
+
+on:
+  push:
+    branches:
+      - 'release/*'
+      - 'dev/*'
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+      with:
+        fetch-depth: 0
+        ref: ${{ github.ref_name}}
+    - name: Upload Helm Repo
+      env:
+        ALIYUN_ACCESS_KEY_ID: ${{ secrets.ALIYUN_ACCESS_KEY_ID }}
+        ALIYUN_SECRET_ACCESS_KEY: ${{ secrets.ALIYUN_SECRET_ACCESS_KEY }}
+        ALIYUN_BUCKET: oss://pandaria-catalog
+        ALIYUN_ENDPOINT: http://oss-cn-hangzhou.aliyuncs.com/
+        VERSION_FOLDER_ACCESS: public-read
+        LOGO_FOLDER_ACCESS: public-read
+        OSSUTIL_VERSION: "1.7.19"
+        LOGO_FOLDER: assets/logo
+      run: |
+        scripts/aliyun-oss-sync
