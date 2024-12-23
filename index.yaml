@@ -942,19 +942,21 @@ entries:
       catalog.cattle.io/upstream-version: 0.13.0
     apiVersion: v2
     appVersion: 0.13.0
-    created: "2024-12-17T14:34:14.331895+08:00"
+    created: "2024-12-23T09:49:47.933606+08:00"
     dependencies:
     - alias: gfd
       condition: gfd.enabled
       name: gfd
       repository: file://./charts/gfd
+      version: 0.7.0
     - alias: nfd
       condition: nfd.enabled,gfd.enabled
       name: nfd
       repository: file://./charts/nfd
+      version: 0.12.1
     deprecated: true
     description: A Helm chart for the nvidia-device-plugin on Kubernetes
-    digest: 5ba730bd500ae22fc10cf43e02555f411a192c7b605ff7f647b60757c5adfbe8
+    digest: 4d247df6fb7e6f97140ebe7b7479353ee680205e56b7426b1c939fbc5f2d1fb0
     home: https://github.com/NVIDIA/k8s-device-plugin
     icon: https://raw.githubusercontent.com/jianghang8421/gpu-device-plugin-charts/master/nvidia_logo.png
     kubeVersion: '>= 1.20.0-0'
@@ -1068,19 +1070,22 @@ entries:
       catalog.cattle.io/kube-version: '>= 1.20.0-0'
       catalog.cattle.io/rancher-version: '>= 2.6.0-0'
     apiVersion: v2
-    created: "2024-04-09T16:58:50.41032+08:00"
+    created: "2024-12-23T09:49:48.016899+08:00"
     dependencies:
     - condition: grafana.enabled
       name: grafana
       repository: file://./charts/grafana
+      version: 0.0.5
     - condition: thanos.enabled
       name: thanos
       repository: file://./charts/thanos
+      version: 0.0.5
     - condition: ui.enabled
       name: ui
       repository: file://./charts/ui
+      version: 0.0.4
     description: A Helm chart for Rancher v2 global monitoring
-    digest: 74c6cebc2bf7cb555649ba1cebc4dea97071e5b664ddb223282f6d5861d79f7c
+    digest: de63d1ab84b0bd7c6eb74b2d92eacfa97f1fbf234f945b90358ec7142c6bff7a
     icon: https://pandaria-catalog.oss-cn-hangzhou.aliyuncs.com/assets/logo/rancher-thanos.png
     keywords:
     - thanos
